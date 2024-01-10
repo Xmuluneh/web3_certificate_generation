@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-import openai
+import openai 
 from dotenv import load_dotenv
 import os
 

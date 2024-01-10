@@ -12,4 +12,3 @@ In this project, the client is 10 Academy; the client would like to solve the ch
 
 `npx create-react-app client  --use-npm`
 
-``
