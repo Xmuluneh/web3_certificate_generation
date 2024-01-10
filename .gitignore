@@ -24,4 +24,4 @@ client/yarn-error.log*
 /c.py
 .env
 /main.py
-/a.py
+a.py
