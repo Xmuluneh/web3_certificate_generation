@@ -26,4 +26,5 @@ client/yarn-error.log*
 /main.py
 a.py
 .env
+images/
 /Users/Aaron/web3_certificate_generation/.env
