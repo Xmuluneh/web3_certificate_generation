@@ -1,8 +1,6 @@
-#!/usr//bin/ env python
-
+#!/usr/bin/ env python3
 import os
 import sys
-
 
 def main():
     """Run administrative tasks."""
@@ -12,9 +10,9 @@ def main():
     except ImportError as exc:
         raise ImportError(
             ''' Django import failed.
-               Please ensure that Django is installed and accessible on your PYTHONPATH environment variable.
-               Have you activated a virtual environment?"
-             '''
+                Please ensure that Django is installed and accessible on your PYTHONPATH environment variable.
+                Have you activated a virtual environment?"
+            '''
         ) from exc
     execute_from_command_line(sys.argv)
 
