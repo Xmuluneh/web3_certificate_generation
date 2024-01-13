@@ -25,8 +25,8 @@ Algorand provides a docker instance for setting up a node, which can be used to 
 `./sandbox up testnet -v`
 
 ## Backend 
-`pip install django  djangorestframework  django-cors-headers 3.8.0`
+`pip install -r requirements.txt `
 
-`django-admin startapp core`
+`python manage.py migrate`
 
-`mv core api `
+`python manage.py server`
