@@ -27,4 +27,6 @@ Algorand provides a docker instance for setting up a node, which can be used to 
 ## Backend 
 `pip install django  djangorestframework  django-cors-headers 3.8.0`
 
-``
+`django-admin startapp core`
+
+`mv core api `
