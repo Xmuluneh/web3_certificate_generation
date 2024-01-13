@@ -12,11 +12,15 @@ In this project, the client is 10 Academy; the client would like to solve the ch
 
 `git clone https://github.com/Xmuluneh/web3_certificate_generation.git `
 
+`cd web3_certificate_generation.git `
+
 `npx create-react-app client  --use-npm`
 
 ## install Sandbox
 
 Algorand provides a docker instance for setting up a node, which can be used to get started developing quickly. To install and use this instance, follow these instructions.​
+
+`cd web3_certificate_generation.git`
 
 `git clone https://github.com/algorand/sandbox.git`
 
@@ -25,6 +29,9 @@ Algorand provides a docker instance for setting up a node, which can be used to 
 `./sandbox up testnet -v`
 
 ## Backend 
+
+`cd web3_certificate_generation.git`
+
 `pip install -r requirements.txt `
 
 `python manage.py migrate`
