@@ -1,5 +1,3 @@
-"""Module containing helper functions for accessing Algorand blockchain."""
-
 import base64
 import os
 import pty
@@ -12,7 +10,7 @@ from algosdk.error import IndexerHTTPError
 from algosdk.future.transaction import LogicSig, LogicSigTransaction, PaymentTxn
 from algosdk.v2client import algod, indexer
 
-INDEXER_TIMEOUT = 10  # 61 for devMode
+INDEXER_TIMEOUT = 20 
 
 
 ## SANDBOX
@@ -69,7 +67,7 @@ def _algod_client():
 
 def _indexer_client():
     """Instantiate and return Indexer client object."""
-    indexer_address = "http://localhost:8980"
+    indexer_address = "http://localhost:8080"
     indexer_token = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
     return indexer.IndexerClient(indexer_token, indexer_address)
 
@@ -209,15 +207,10 @@ def transaction_info(transaction_id):
         )
 
     return transaction
-
-
-
 def _compile_source(source):
     """Compile and return teal binary code."""
     compile_response = _algod_client().compile(source)
     return base64.b64decode(compile_response["result"])
-
-
 def logic_signature(teal_source):
     """Create and return logic signature for provided `teal_source`."""
     compiled_binary = _compile_source(teal_source)
