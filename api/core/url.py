@@ -1,6 +1,3 @@
-''' This code is defining the URL patterns for a Django web application. Each `path` function call
-    specifies a URL pattern and associates it with a corresponding view function.
- '''
 from django.urls import path
 from . import views
 
