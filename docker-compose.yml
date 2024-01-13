@@ -1,6 +1,0 @@
-services:
-  django:
-    container_name: "Backend"
-    build:
-      dockerfile: ./Dockerfile
-      context: ./
